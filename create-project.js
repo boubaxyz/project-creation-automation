@@ -1,12 +1,10 @@
+require('dotenv').config();
 const fs = require('fs');
 const github = require('octonode');
 
-// Replace with the desired path
-const path = '/Users/boubacar/Desktop/Projects/';
-
-// Add your Github username and pwd below
-const username = '';
-const password = '';
+const path = process.env.DIRECTORY;
+const username = process.env.USERNAME;
+const password = process.env.PASSWORD;
 
 const create = () => {
 	const projectName = process.argv[2];

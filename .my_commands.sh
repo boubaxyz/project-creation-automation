@@ -1,13 +1,15 @@
 #!/usr/bin/env bash
 
 function create() {
-  node /Users/boubacar/create-project/create-project.js $1 #Replace with path to create-project.js
-  cd /Users/boubacar/Desktop/Projects/$1 #Replace with path to your projects directory
+  cd /Users/boubacar/create-project/ #Replace with path to create-project.js
+  source .env
+  node create-project.js $1
+  cd $DIRECTORY$1
   echo "# $1" >> README.md
   git init
   git add README.md
   git commit -m "first commit"
-  git remote add origin https://github.com/boobadiallo/$1.git #Replace my Github username with yours
+  git remote add origin https://github.com/$USERNAME/$1.git
   git push -u origin master
   code .
 }
