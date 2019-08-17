@@ -3,8 +3,8 @@ const fs = require('fs');
 const github = require('octonode');
 
 const path = process.env.DIRECTORY;
-const username = process.env.USERNAME;
-const password = process.env.PASSWORD;
+const username = process.env.GITHUB_USERNAME;
+const password = process.env.GITHUB_PASSWORD;
 
 const create = () => {
 	const projectName = process.argv[2];

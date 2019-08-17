@@ -9,7 +9,7 @@ function create() {
   git init
   git add README.md
   git commit -m "first commit"
-  git remote add origin https://github.com/$USERNAME/$1.git
+  git remote add origin https://github.com/$GITHUB_USERNAME/$1.git
   git push -u origin master
   code .
 }
