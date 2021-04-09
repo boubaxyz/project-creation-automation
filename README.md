@@ -17,6 +17,7 @@ Uses [**dotenv**](https://www.npmjs.com/package/dotenv) to load up environment v
 3. Run `npm i dotenv octonode`
 4. Change first line in function inside **_.my_commands.sh_** to reflect where this project was cloned
 5. Add your credentials and desired path to **_.env_**
+   - You'll need to generate a personal access token to be able to authenticate with that as the API has been updated and auth with password is deprecated.
 6. Steps to follow to make the command global:
 
 - Move **_.my_commands.sh_** to your HOME directory.. or add its contents to your custom commands file if you already have one
